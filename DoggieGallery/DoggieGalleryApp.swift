@@ -11,7 +11,9 @@ import SwiftUI
 struct DoggieGalleryApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            NavigationView() {
+                TabBarView()
+            }
         }
     }
 }

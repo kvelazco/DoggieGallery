@@ -8,17 +8,21 @@
 
 /* Begin PBXBuildFile section */
 		211C26232A2E525E00D57303 /* DoggieGalleryApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 211C26222A2E525E00D57303 /* DoggieGalleryApp.swift */; };
-		211C26252A2E525E00D57303 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 211C26242A2E525E00D57303 /* ContentView.swift */; };
 		211C26272A2E526400D57303 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 211C26262A2E526400D57303 /* Assets.xcassets */; };
 		211C262A2A2E526400D57303 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 211C26292A2E526400D57303 /* Preview Assets.xcassets */; };
+		211C26342A2E64FF00D57303 /* TabBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 211C26332A2E64FF00D57303 /* TabBarView.swift */; };
+		211C26362A2E651E00D57303 /* BreedsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 211C26352A2E651E00D57303 /* BreedsView.swift */; };
+		211C26382A2E711300D57303 /* FavoritesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 211C26372A2E711300D57303 /* FavoritesView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		211C261F2A2E525E00D57303 /* DoggieGallery.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DoggieGallery.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		211C26222A2E525E00D57303 /* DoggieGalleryApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DoggieGalleryApp.swift; sourceTree = "<group>"; };
-		211C26242A2E525E00D57303 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		211C26262A2E526400D57303 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		211C26292A2E526400D57303 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		211C26332A2E64FF00D57303 /* TabBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarView.swift; sourceTree = "<group>"; };
+		211C26352A2E651E00D57303 /* BreedsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BreedsView.swift; sourceTree = "<group>"; };
+		211C26372A2E711300D57303 /* FavoritesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,8 +55,10 @@
 		211C26212A2E525E00D57303 /* DoggieGallery */ = {
 			isa = PBXGroup;
 			children = (
+				211C26302A2E645500D57303 /* Models */,
+				211C26322A2E64AA00D57303 /* ViewModels */,
+				211C26312A2E64A200D57303 /* Views */,
 				211C26222A2E525E00D57303 /* DoggieGalleryApp.swift */,
-				211C26242A2E525E00D57303 /* ContentView.swift */,
 				211C26262A2E526400D57303 /* Assets.xcassets */,
 				211C26282A2E526400D57303 /* Preview Content */,
 			);
@@ -65,6 +71,30 @@
 				211C26292A2E526400D57303 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		211C26302A2E645500D57303 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		211C26312A2E64A200D57303 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				211C26332A2E64FF00D57303 /* TabBarView.swift */,
+				211C26352A2E651E00D57303 /* BreedsView.swift */,
+				211C26372A2E711300D57303 /* FavoritesView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		211C26322A2E64AA00D57303 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModels;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,8 +167,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				211C26252A2E525E00D57303 /* ContentView.swift in Sources */,
+				211C26382A2E711300D57303 /* FavoritesView.swift in Sources */,
+				211C26342A2E64FF00D57303 /* TabBarView.swift in Sources */,
 				211C26232A2E525E00D57303 /* DoggieGalleryApp.swift in Sources */,
+				211C26362A2E651E00D57303 /* BreedsView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
