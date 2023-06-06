@@ -8,19 +8,20 @@
 import SwiftUI
 
 struct TabBarView: View {
-        
-    @State var selectedTab: Int = 0;
+    
+    //@StateObject var breedViewModel = BreedListViewModel()
+    @State var selectedTab: Int = 0
     
     var body: some View {
         
         TabView(selection: $selectedTab) {
             
-            BreedsView()
+            BreedListView()
                 .tabItem() {
                     Label("Breeds", systemImage: "pawprint")
                 }
                 .tag(0)
-            FavoritesView()
+            FavoriteListView()
                 .tabItem() {
                     Label("Favorites", systemImage: "heart")
                 }
